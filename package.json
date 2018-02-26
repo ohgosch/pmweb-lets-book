@@ -1,0 +1,9 @@
+{
+  "name": "pmweb-lets-book",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/rgosch/pmweb-lets-book.git",
+  "author": "Ricardo Gosch <rgosch@reweb.com.br>",
+  "license": "MIT",
+  "devDependencies": {}
+}
