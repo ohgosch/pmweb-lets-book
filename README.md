@@ -35,7 +35,6 @@ Create a custom CSS, JS e HTML to inner in a existent site.
 * Boas práticas de desenvolvimento;
 * Tempo de entrega.
 
-
 ## Getting Started
 
 The following are the steps to execute the project locally in the console of the page https://demo2.letsbook.com.br/D/Reserva?cidade=SPO.
@@ -64,7 +63,6 @@ sudo npm install -g yarn
 
 ### Setting Up
 
-
 ```
 npm install
 ```
@@ -72,3 +70,20 @@ or
 ```
 yarn install
 ```
+
+#### To compile the files in development mode, use the command:
+```
+npm dev
+```
+or
+```
+yarn dev
+```
+
+#### To compile the files in production mode, use the command:
+```
+npm build
+```
+or
+```
+yarn build
