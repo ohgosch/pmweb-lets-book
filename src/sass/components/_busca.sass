@@ -1,4 +1,4 @@
-#busca
+#busca, #busca-flutuante
     background-color: $secondary
     .mcolor-busca-bright
         background-color: $secondary-contrast
@@ -6,3 +6,10 @@
             lighten($secondary-contrast, 3)
         .icon-destino::before
             color: $primary-contrast
+    #destino, #datas, #adultos, #criancas, #modificarBusca
+        &:hover
+            color: $primary
+
+#busca-flutuante
+    &:hover
+        background-color: lighten($secondary, 4)

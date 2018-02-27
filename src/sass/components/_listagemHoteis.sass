@@ -19,6 +19,8 @@
                 > img
                     width: 100%
                     height: auto
+                    display: block
+                    float: none
                 .slider-imagens-hotel
                     width: 100%
                     height: auto
@@ -40,6 +42,7 @@
                     margin: 15px 0 0
                     .tituloHotel
                         width: 100%
+                        height: auto
                         float: none
                         .itemVarNomeHotel
                             color: #444444
@@ -47,6 +50,9 @@
                             font-weight: 700
                             line-height: 20px
                             text-transform: uppercase
+                            display: block
+                            float: none
+                            width: 100%
                         .infoHotel
                             color: #666666
                             font-size: 14px
@@ -54,12 +60,27 @@
                             line-height: 18px
                             text-transform: uppercase
                             margin: 25px 0 0
+                            display: block
+                            float: none
+                            width: 100%
+                            margin: 20px 0 0 0
+                            .icoEnderecoHotel
+                                color: $primary
+                                font-size: 22px
+                                position: static
+                                font-family: 'icomoon' !important
+                                text-align: left
+                                &:before
+                                    content: "\e61b"
+                                span
+                                    display: none
                             .mcolor-cliente-principal-text
                                 color: $primary
                                 font-size: 22px
                                 position: static
                             .itemVarTelefoneHotel
                                 margin: 0
+                                display: block
                     .infoAcomodacao
                         margin: 15px 0 0
                         width: 100%
@@ -89,13 +110,14 @@
                                 font-size: 16px
                                 font-weight: 700
                                 line-height: 20px
-                            .itemVarDescricaoAcomodacao
-                                margin: -10px 0 0 52px
-                                color: #478800
+                        .itemVarDescricaoAcomodacao
+                            margin: -10px 0 0 52px
+                            color: #478800
                     .blocoReserve
                         position: static
                         width: 100%
                         height: auto
+                        margin: 30px 0 0
                         .itemBtnEfetuarReserva
                             background-color: $primary
                             width: 50%
@@ -108,6 +130,9 @@
                             line-height: 20px
                             width: auto
                             text-transform: uppercase
+                            float: none
+                            width: 50%
+                            text-align: left
                         .valorContainer
                             float: left
                             .itemVarValorFinal
@@ -125,3 +150,15 @@
                         font-weight: 700
                         line-height: 21px
                         margin: 20px 0 0
+                    .hotel-indisponivel-texto-sub-titulo
+                        line-height: 21px
+                        text-align: center
+                        font-size: 14px
+                        a
+                            color: $primary
+                            &:hover
+                                color: darken($primary, 3)
+                    .hotel-indisponivel-ico
+                        display: block
+                        float: none
+                        margin: 20px auto 0 auto
