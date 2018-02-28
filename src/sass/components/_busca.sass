@@ -1,28 +1,35 @@
 #busca, #busca-flutuante
     background-color: $secondary
+
     .mcolor-busca-bright
         background-color: $secondary-contrast
+
         &:hover
             lighten($secondary-contrast, 3)
+
         .icon-destino::before
             color: $primary-contrast
+
     #destino, #datas, #adultos, #criancas, #modificarBusca
         &:hover
             color: $primary
     .bloco-seletor-adulto-selected
         background-color: $secondary-contrast !important
+
     .mcolor-busca-dark
         background-color: #211f1d
+
     #container-campos-nova-busca
         .mcolor-label-text
             color: $primary
+
         .mcolor-action-btn
             background-color: $primary
             border: none
             font-weight: 700
+
         #busca-promocode-label
             color: white
 
-#busca-flutuante
-    &:hover
-        background-color: lighten($secondary, 4)
+#busca-flutuante:hover
+    background-color: lighten($secondary, 4)

@@ -31,10 +31,16 @@ let component = () => {
     // Logo Footer
     $('#footerContent .footerFirstLine p:nth-child(2)').html('<a href="https://www.pmweb.com.br/" target="_blank" title="Desenvolvido por Pmweb"><img src="//i.imgur.com/FGgG2NO.png" alt="Logotipo Pmweb" /><a/>')
 
+
+    /**
+     * Slick Slider fix
+     */
     // Slider lazy auto update
     let currentSlide = $('.slick-list').find('.slick-slide.slick-current.slick-active')
-    // let slides = $('.slick-list .slick-slide')
+
+    // Get width to set in active sliders
     let width = $('.slider-imagens-hotel')[0].clientWidth
+
     currentSlide.each((index, element) => {
         let el = $(element)
         let img = el.find('img')
@@ -43,6 +49,8 @@ let component = () => {
         img.src = src
 
     })
+
+    // It is required to fix the uninitialized slick bug
     $('.slider-imagens-hotel').slick('slickNext')
     $('.slider-imagens-hotel').slick('slickPrev')
 }
