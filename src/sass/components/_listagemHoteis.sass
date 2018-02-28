@@ -26,6 +26,8 @@
                     height: auto
                     float: none
                     .slick-arrow
+                        background-color: rgba(black, .6)
+                        font-family: 'Roboto'
                         &.img-hotel-arrow-left
                             left: 0
                             right: auto
@@ -35,6 +37,8 @@
                     img
                         width: 100%
                         height: auto
+                    .slick-slide:not(.slick-active) img
+                        height: 100%
                 .itemHotelContent
                     float: none
                     width: 100%
@@ -123,6 +127,8 @@
                             width: 50%
                             float: right
                             margin-top: -18px
+                            &:hover
+                                background-color: lighten($primary, 3) !important
                         .itemVarValorSemDesconto
                             color: #888888
                             font-size: 13px
@@ -162,3 +168,4 @@
                         display: block
                         float: none
                         margin: 20px auto 0 auto
+                        max-width: 75px
