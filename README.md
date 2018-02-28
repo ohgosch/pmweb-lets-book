@@ -90,3 +90,5 @@ yarn build
 ```
 ### Testing in browser
 For you test in your browser, you need follow the [step compile production mode](#to-compile-the-files-in-production-mode-use-the-command). Then you need access the folder "build" and copy the content of the file "app.bundle.js" and paste on console of browser.
+
+**For everything to work properly, the page must be fully loaded.**
