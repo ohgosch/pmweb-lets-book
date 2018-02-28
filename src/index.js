@@ -53,5 +53,26 @@ let component = () => {
     // It is required to fix the uninitialized slick bug
     $('.slider-imagens-hotel').slick('slickNext')
     $('.slider-imagens-hotel').slick('slickPrev')
+
+
+    /**
+     * blocoReserve order
+     */
+    let blockContainers = $('.blocoReserve')
+
+    blockContainers.each((index, element) => {
+        let el = $(element)
+        let target = el.find('> .itemVarValorSemDesconto')
+
+        // If element is inside of the container
+        if(!target.length) return
+
+        // Remove the target from outside container
+        target.remove()
+
+        // Add target to container
+        $('.valorContainer').append(target)
+
+    })
 }
 component()
